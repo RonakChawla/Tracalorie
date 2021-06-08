@@ -412,6 +412,8 @@ const App = (function(ItemCtrl, UICtrl, StorageCtrl){
 
         UICtrl.removeItems();
 
+        UICtrl.clearEditState();
+
         StorageCtrl.removeAllItemsFromStorage();
 
         const totalCalories = ItemCtrl.getTotalCalories();
